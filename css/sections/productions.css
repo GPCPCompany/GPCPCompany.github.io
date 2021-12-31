@@ -74,6 +74,7 @@
   /* Discord */
   /* Youtube */
   /* Github */
+  /* Wordpress Blog */
   /* Linkedin */
 }
 
@@ -112,6 +113,11 @@
 .footer .iconlinks .fa-github {
   background: black;
   color: white;
+}
+
+.footer .iconlinks .fa-wordpress {
+  background: white;
+  color: #00749C;
 }
 
 .footer .iconlinks .fa-linkedin-in {
