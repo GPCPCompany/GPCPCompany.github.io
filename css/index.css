@@ -1,0 +1,96 @@
+:root {
+  --accentcol: #4318dc;
+  --dropdownbgcol: #262626;
+  --sidenavcol: #171717;
+}
+
+body {
+  overflow: hidden;
+}
+
+.teamtitle {
+  text-align: center;
+  margin-bottom: 0;
+  color: white;
+}
+
+.team {
+  display: flex;
+  width: 100%;
+  padding: 0% 2%;
+  padding-top: 20px;
+  box-sizing: border-box;
+  height: 80vh;
+}
+
+.profile-card {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 1.25rem 1.875rem rgba(0, 0, 0, 0.2);
+  line-height: 0;
+  border-radius: 20px;
+  background: var(--sidenavcol);
+}
+
+.profile-card:hover {
+  flex: 1 1 30%;
+}
+
+.profile-card img {
+  width: 200%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.profile-card:hover img {
+  width: 100%;
+  height: 78%;
+}
+
+.profile-card span {
+  text-align: center;
+}
+
+.profile-card span .title {
+  color: white;
+}
+
+.profile-card .post {
+  display: block;
+  font-size: 15px;
+  color: var(--accentcol);
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+
+.profile-card .social {
+  padding: 0;
+  margin: 0;
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.profile-card .social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.profile-card .social li a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: var(--accentcol);
+  border: 1px solid var(--accentcol);
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+}
+
+.profile-card .social li a:hover {
+  background: var(--dropdownbgcol);
+}
